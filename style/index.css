@@ -145,8 +145,58 @@ max-height: 40rem;
 /* #region projects */
 .container {
   display: flex;
-  margin: 20rem;
+  margin: 10rem 20rem;
+  max-height: 50rem;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.project {
+  display: flex;
+  height: 45rem;
+  /* max-width: 15rem; */
+border: 1px solid orange;
+margin: 0rem 1rem;
+}
+
+.project img {
+display: flex;
+  justify-content: center;
+  filter: grayscale(20);
+  height: 45rem;
+  max-width: 15rem;
+  min-width: 1rem;
+  object-fit: cover;
+    /* For Safari 3.1 to 6.0
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s; */
+    /* Standard syntax
+    transition-property: all;
+    transition-duration: 1s; */
+  border: 1px solid yellow;
+  /* flex-grow: 2; */
+}
+.project img:hover{
+  /* flex-grow: 4; */
+  filter: none;
+  width: 15rem;
+}
+
+.info {
+  max-width: 15%;
+  /* flex-grow: 1; */
+  border: 1px solid green;
 }
 /* #endregion */
 /* #region footer */
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #323737;
+  height: 10rem;
+  padding: 2rem;
+}
+footer a {
+  max-width: 22rem;
+}
 /* #endregion */
