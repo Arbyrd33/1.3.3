@@ -96,12 +96,12 @@ p {
   font-size: 1.5rem;
 }
 /* #endregion */
-/* #region header */
+/* #region index header */
 header {
   padding: 4rem 10rem;
 }
 header p {
-  margin-bottom: 4rem;
+  margin: 4rem 0rem;
 }
 
   /* #region navbar */
@@ -141,9 +141,7 @@ header p {
   /* #endregion  */
 
 /* #endregion */
-
-
-/* #region projects */
+/* #region index project list */
 .container {
   display: flex;
   margin: 10rem 20rem;
@@ -186,12 +184,51 @@ header p {
   }
 /* #endregion */
 
+/* #region projects.html */
+#myProjects{
+  display: flex;
+  justify-content: center;
+  margin: 8rem 5rem;
+  padding: 2rem;
+  background-color: #D8DDCF;
+}
+.post{
+  flex-flow: row;
+  width: 100%;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #92B6BF;
+  border: 1px inset #c6c6c6;
+}
+.post img {
+  margin: 0% 3%;
+
+  height: 25rem;
+  border: 1px solid #D8DDCF;
+}
+.post p{
+  margin-top: 8%;
+}
+
+
+div#YosemiteGuide img{
+  /* width: 95%; */
+  margin: 0% 10%;
+}
+div#sweatsbakery img{
+  margin: 0% 15%;
+  width: 70%;
+}
+/* #endregion */
+
+
+
 
 /* #region footer */
 footer{
   display: flex;
   justify-content: center;
-  background-color: #323737;
+  background-color: #718294;
   height: 10rem;
   padding: 2rem;
 }
