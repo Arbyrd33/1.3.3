@@ -1,1 +1,238 @@
-/* Add CSS styling here */
+/* #region CSS reset by piccalilli */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* #endregion */
+
+/* #region universal selectors */
+html {
+
+  font-size: 62.5%;
+  background-color: #A2B2B8;
+  max-width: 100%;
+
+}
+h1 {
+  text-align: center;
+  color: #6E4949;
+  font-size: 4rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* #endregion */
+/* #region index header */
+header {
+  padding: 4rem 10rem;
+}
+header p {
+  margin: 4rem 0rem;
+}
+
+  /* #region navbar */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 0rem;
+  }
+  nav a {
+    padding: 1rem 3rem;
+    text-align: center;
+    max-width: 15rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #92B6BF;
+    background-color: #718394;
+    border: 2px solid #323737;
+  }
+  nav a:hover {
+    background-color: #92B6BF;
+    color: #718394;
+    border: 2px solid #323737;
+  }
+  /* #endregion */
+
+  /* #region hero */
+  #hero {
+  max-height: 40rem;
+  }
+  #hero img {
+    /* display: inline; */
+    max-height: 32rem;
+    object-fit: cover;
+    object-position: 100% 31%;
+    width: 100%;
+  }
+  /* #endregion  */
+
+/* #endregion */
+/* #region index project list */
+.container {
+  display: flex;
+  margin: 10rem 20rem;
+  max-height: 50rem;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid red; */
+}.previews {
+    /* border: 2px solid orange; */
+    width: 100%;
+    display: flex;
+    align-content: center;
+  } .project {
+      /* display: flex; */
+      flex-flow: column;
+      width: 100%;
+      height: 45rem;
+      /* border: 1px solid yellow; */
+      /* justify-content: center; */
+      /* align-content: center; */
+    } .project img {
+        filter: grayscale(80%);
+        height: 45rem;
+        width: 80%;
+        /* min-width: 1rem; */
+        object-fit: cover;
+        /* border: 3px solid green; */
+        transition: width .5s ease-in-out;
+        /* transition: filter 1s ease-in-out; */
+      } .project img:hover{
+          filter: none;
+          /* transition: filter 1s ease-in-out; */
+          width: 100%;
+          transition: width .5s ease-in-out;
+        }
+  .info {
+    align-content: center;
+    width: 25%;
+    /* border: 1px solid blue; */
+  }
+/* #endregion */
+
+/* #region projects.html */
+#myProjects{
+  display: flex;
+  justify-content: center;
+  margin: 8rem 5rem;
+  padding: 2rem;
+  background-color: #D8DDCF;
+}
+.post{
+  flex-flow: row;
+  width: 100%;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #92B6BF;
+  border: 1px inset #c6c6c6;
+}
+.post img {
+  margin: 0% 3%;
+
+  height: 25rem;
+  border: 1px solid #D8DDCF;
+}
+.post p{
+  margin-top: 8%;
+}
+
+
+div#YosemiteGuide img{
+  /* width: 95%; */
+  margin: 0% 10%;
+}
+div#sweatsbakery img{
+  margin: 0% 15%;
+  width: 70%;
+}
+/* #endregion */
+
+
+
+
+/* #region footer */
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #718294;
+  height: 10rem;
+  padding: 2rem;
+}
+footer a {
+  max-width: 22rem;
+}
+/* #endregion */
